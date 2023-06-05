@@ -9,4 +9,4 @@ Alumno: David Hernández Cuevas
 3.- V2TRIFIV.java
 4.- V3TRIFIV.java
 5.- V4TRIFIV.java - funcionMultiplo - V4TRIFIV.java 
-6.- Juego - setup.as
+6.- Juego - setup.as -protagonista.as - antagonista.as
