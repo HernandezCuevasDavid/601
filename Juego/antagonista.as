@@ -10,13 +10,15 @@
 		private var limite_izq: int=350;
 		private var cambia:Timer = new Timer (200,0);
 		private var tipo: Number;
-		
+		private var lanzar: Timer = new Timer(2000,0);
 		
 		public function antagonista() {
 			// constructor code
 			addEventListener(Event.ENTER_FRAME, actualiza);
 			cambia.addEventListener(TimerEvent.TIMER, cambia_dir);
 			cambia.start();
+			lanzar.addEventListener(TimerEvent.TIMER, lanza_bala);
+			lanzar.start();
 			}
 			
 			public function actualiza (e: Event){
@@ -26,6 +28,9 @@
 			}
 			if(x<=limite_izq){
 				dir=1;
+		}
+		if (setup.puntos>0 && setup.puntos %5 == 0 ){
+			vel+=1;
 		}
 		
 				}
@@ -42,6 +47,13 @@
 			}
 			
 		}
+
+             public function lanza_bala(e: TimerEvent){
+             //trace("lanza bala")
+		     var bala_nueva= new bala(x,y);
+			 stage.addChild(bala_nueva);
+			 
+	         }
 
 	}
 	
