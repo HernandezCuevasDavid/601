@@ -8,8 +8,8 @@
 		
 		private var fondo_new: fondo = new fondo();   //variables de clase
 		private var piso_new: piso = new piso();
-		static var protagonista_new: protagonista = new protagonista();
-		private var antagonista_new: antagonista = new antagonista();
+		private var protagonista_new: protagonista = new protagonista();
+		static var antagonista_new: antagonista = new antagonista();
 		
 		static var puntos:Number=0;
 		static var puntos_box_new: puntos_box = new puntos_box();
@@ -23,8 +23,8 @@
 			
 			addChild( puntos_box_new );
 			
-			puntos_box_new.x= 125;
-			puntos_box_new.y=25;
+			puntos_box_new.x= 490;
+			puntos_box_new.y=375;
 			puntos_box_new.puntostxt.text= String(puntos);
 			
 			fondo_new.y = 195;
