@@ -1,0 +1,50 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>380</x><y>40</y><w>90</w><h>80</h></coordinates><panel_attributes>MOVIECLIP
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>60</x><y>170</y><w>160</w><h>140</h></coordinates><panel_attributes>setup
+--
+-fondo_new
+-piso_new
++antagonista_new
+-puntos:Number=0:
++puntos_box_new
+--
+setup()
+actualiza_puntos(e:Event)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>140</x><y>390</y><w>190</w><h>190</h></coordinates><panel_attributes>protagonista
+--
+-izq: Boolean =false
+-der: Boolean=false
+-vel: int=10
+-lim_x_der:int=510
+-lim_x_izq:int=10 
+--
+protagonista()
+motor(e:Event):void
+controles()
+keydown(e:KeyboardEvent):void
+keyup(e:KeyboardEvent):void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>440</x><y>380</y><w>210</w><h>200</h></coordinates><panel_attributes>antagonista
+--
+-limite_der:int=520
+-limite_izq:int=32
+-dir:Numer=1
+vel:int=10
+-cambia:Timer=new Timer(200,0)
+-tipo:Number
+-lanzar: Timer = new Timer (2000,0)
+--
+antagonista()
+cambia_dir(e:TimerEvent)
+actializa(e:Event)
+lazar_bala(e:TimerEvent)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>570</x><y>210</y><w>120</w><h>80</h></coordinates><panel_attributes>bala
+--
+-vel: Number = 5
+--
+bala(pos_x, pos_y)
+movie(e:Event)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>140</x><y>70</y><w>260</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+1 a 1</panel_attributes><additional_attributes>10;100;240;10</additional_attributes></element><element><id>Relation</id><coordinates><x>460</x><y>70</y><w>190</w><h>160</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+|1 a +</panel_attributes><additional_attributes>170;140;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>210</x><y>230</y><w>380</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;-
+1 a 1</panel_attributes><additional_attributes>360;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>20</x><y>300</y><w>140</w><h>200</h></coordinates><panel_attributes>lt=&lt;&lt;-
+1 a 1</panel_attributes><additional_attributes>120;180;10;180;70;10</additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>460</y><w>140</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;-
+1 a 1</panel_attributes><additional_attributes>120;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>230</x><y>110</y><w>180</w><h>300</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+1 a 1</panel_attributes><additional_attributes>10;280;160;10</additional_attributes></element><element><id>Relation</id><coordinates><x>440</x><y>110</y><w>120</w><h>290</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+1 a 1</panel_attributes><additional_attributes>100;270;10;10</additional_attributes></element></diagram>
